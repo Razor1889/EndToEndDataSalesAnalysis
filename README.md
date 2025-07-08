@@ -4,6 +4,8 @@
 **Domain:** E-Commerce · Sales Analysis · Regional Trends · Product Strategy  
 **Duration:** 2018–2021 | **Records Analyzed:** 22,000+ Orders
 
+---
+
 ## Project Overview
 
 This project analyzes historical sales data from a fictional company called *GameZone*, a global retailer of gaming electronics and accessories. The goal was to extract actionable insights on sales performance, customer trends, regional growth, and product performance using interactive dashboards and data modeling.
@@ -27,6 +29,11 @@ The analysis supports business decisions in marketing, inventory, and regional s
 - `Date` (date dimension)
 - Star schema with relationships on `COUNTRY_CODE` and `PURCHASE_TS`
 
+### 🔗 Data Model Diagram
+
+![Data Model with Fact and Dimension Tables](DataLayout.png)  
+*This visual illustrates the data relationships between `orders_cleaned`, `region_cleaned`, and the `Date` table.*
+
 ---
 
 ## Executive Summary
@@ -39,6 +46,25 @@ The analysis supports business decisions in marketing, inventory, and regional s
 - **Average Order Value (AOV):** $281.34  
 - **Best-Selling Product:** Nintendo Switch  
 - **Top Region by Revenue:** North America (~$3M+)
+
+---
+
+## Dashboard Highlights
+
+### 📊 Main Sales Dashboard
+
+![Main Executive Dashboard](DashboardMain.png)  
+*Shows overall KPIs including YoY growth, revenue, sales amount, AOV, and top product by sales.*
+
+### 📈 Growth Metrics Dashboard
+
+![Growth Metrics Dashboard](DashboardGrowth.png)  
+*Tracks month-over-month and year-over-year performance metrics.*
+
+### 🧾 Detailed Breakdown Matrix
+
+![Detailed Matrix Dashboard](DashboardDetailed.png)  
+*Allows stakeholders to apply filters (region, product, time, platform) and view detailed metrics in a matrix format.*
 
 ---
 
@@ -84,18 +110,6 @@ The analysis supports business decisions in marketing, inventory, and regional s
 
 ---
 
-## Dashboard Highlights (Power BI)
-
-- Dynamic filters by year, region, and month
-- KPI cards for total revenue, AOV, time to ship, and growth rates
-- Bar charts showing regional revenue performance
-- Geo map of revenue density by country
-- Highlighted best-selling product and trend breakdowns
-
-
-
----
-
 ## Next Steps
 
 - Add customer segmentation and retention metrics
@@ -104,4 +118,21 @@ The analysis supports business decisions in marketing, inventory, and regional s
 - Consider predictive modeling for demand forecasting
 
 ---
+
+## How to Use This Repo
+
+To view the dashboards or edit the data model:
+
+1. Open `GameZone.pbix` in Power BI Desktop  
+2. Use the filter panel to interact with time, region, platform, and product views  
+3. DAX measures are present in `GameZone.pbix`
+4. Dataset: located in `gamezone-orders-data.xlsx`. Credits to Christine Jiang for the data
+
+---
+
+## Contact
+
+**Author:** Mirza Baig  
+📧 [Email](mirza.shujath1889@gmail.com)
+🔗 [LinkedIn](http://www.linkedin.com/in/mirza-baig-mmirzash1889)
 
